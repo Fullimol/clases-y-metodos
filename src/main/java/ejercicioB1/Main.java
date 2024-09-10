@@ -1,4 +1,4 @@
-package clasesymetodos;
+package ejercicioB1;
 
 //iniciar aplicacion
 public class Main {

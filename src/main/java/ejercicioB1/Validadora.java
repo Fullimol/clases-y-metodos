@@ -1,4 +1,4 @@
-package clasesymetodos;
+package ejercicioB1;
 
 public class Validadora {
 
