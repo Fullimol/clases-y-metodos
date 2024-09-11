@@ -35,15 +35,19 @@ public class Main {
 
             System.out.println(respuesta);
 
+            
             System.out.println("Desea continuar? (s / n)");
             String consulta = scanner.next();
 
-            if (consulta.equals("s")) {
+
+            do {
+                if (consulta.equals("s")) {
                 continuar = true;
-            }
-            if (consulta.equals("n")) {
-                continuar = false;
-            }
+                }
+                if (consulta.equals("n")) {
+                    continuar = false;
+                } 
+            } while (!consulta.equals("s") && !consulta.equals("n"));
 
         }
 
