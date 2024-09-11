@@ -15,10 +15,37 @@ El usuario decidirá cuándo finalizar el programa
  */
 package ejercicioB3;
 
-/**
- *
- * @author usuario
- */
+import java.util.Scanner;
+
 public class Main {
-    
+
+    public static void main(String[] args) {
+        boolean continuar = true;
+
+        while (continuar) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Ingrese primer valor: ");
+            int num1 = scanner.nextInt();
+            System.out.print("Ingrese segundo valor: ");
+            int num2 = scanner.nextInt();
+            System.out.print("Ingrese operacion (+, -, *, /): ");
+            char operacion = scanner.next().charAt(0);
+
+            double respuesta = Calculadora.calcular(num1, num2, operacion);
+
+            System.out.println(respuesta);
+
+            System.out.println("Desea continuar? (s / n)");
+            String consulta = scanner.next();
+
+            if (consulta.equals("s")) {
+                continuar = true;
+            }
+            if (consulta.equals("n")) {
+                continuar = false;
+            }
+
+        }
+
+    }
 }
