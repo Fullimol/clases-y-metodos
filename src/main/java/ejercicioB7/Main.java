@@ -9,8 +9,24 @@ El ingreso de los datos como la visualización se deberán realizar desde el mé
  */
 package ejercicioB7;
 
+
 public class Main {
     public static void main(String[] args) {
+        //cuadrado
+        double longitudCuadrado = 10;
+        //triangulo
+        double baseTriangulo = 10;
+        double alturaTriangulo = 15;
+        //circulo
+        double radioCirculo = 8;
+        
+        
+        double areaCuadrado = CalculadoraDeArea.calcularAreaCuadrado(longitudCuadrado);
+        double areaTriangulo = CalculadoraDeArea.calcularAreaTriangulo(baseTriangulo, alturaTriangulo);
+        double areaCirculo = CalculadoraDeArea.calcularAreaCirculo(radioCirculo);
+        System.out.println("Area del CUADRADO: " + areaCuadrado);
+        System.out.println("Area del TRIANGULO: " + areaTriangulo);
+        System.out.println("Area del CIRCULO: " + areaCirculo);
         
     }
 
